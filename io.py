@@ -30,8 +30,10 @@ def findMedianSortedArrays(nums1, nums2):
     
     raise ValueError("Input arrays are not sorted or something went wrong.")
 
-nums1 = input('array 1 >> ')
-nums1 = list(map(int, nums1.split()))
-nums2 = input('array 2 >> ')
-nums2 = list(map(int, nums2.split()))
-print(findMedianSortedArrays(nums1, nums2))
+while True:
+
+    nums1 = input('array 1 >> ')
+    nums1 = list(map(int, nums1.split()))
+    nums2 = input('array 2 >> ')
+    nums2 = list(map(int, nums2.split()))
+    print(findMedianSortedArrays(nums1, nums2))
